@@ -1,7 +1,7 @@
 // main: ../style.less
 
 .about {
-    margin: 8.4rem 0;
+    margin: 7.4rem 0;
 
     @media @tablet {
         margin: 4rem 0;
@@ -25,11 +25,14 @@
 
 .about__photo {
     position: relative;
+    
+
 
     img {
         position: absolute;
         bottom: 0;
         z-index: 2;
+        border-radius: 25px;
     }
 
     &:before {
@@ -37,7 +40,8 @@
         display: block;
         width: 413px;
         height: 413px;
-        background-color: #EFEFEF;
+        
+        // background-color: #EFEFEF;
 
         position: absolute;
         left: 1rem;
