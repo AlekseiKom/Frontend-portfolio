@@ -2,18 +2,21 @@
 
 .contact {
     display: flex;
-    background:  url(https://placehold.it/477x700) right center no-repeat;
+    border-radius: 15px;
+    // background:  url(https://placehold.it/477x700) right center no-repeat;
 }
 
 .contact__left {
-    width: 47%;
+    width: 100%;
     padding: 2rem;
+    text-align: center;
 }
 
 .contact__info {
     margin: 2rem 0 3rem;
     padding: 0;
     list-style: none;
+    
 
     font-size: .94rem;
     color: @black;
@@ -23,7 +26,10 @@
 .contact__info-item {
     display: flex;
     align-items: center;
+    text-align: center;
     margin-bottom: .75rem;
+    font-size: 1.2rem;
+    
 
     &:last-child {
         margin-bottom: 0;
@@ -33,3 +39,5 @@
 .contact__info-icon {
     margin-right: .75rem;
 }
+
+
