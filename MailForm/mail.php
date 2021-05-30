@@ -12,7 +12,7 @@ $massage = $_POST['input_text'];
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
+$mail->Host = 'smtp.ukr.net';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'lep4ik-7@ukr.net'; // Ваш логин от почты с которой будут отправляться письма
 $mail->Password = '19nikopolidis'; // Ваш пароль от почты с которой будут отправляться письма
