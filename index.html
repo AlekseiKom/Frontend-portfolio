@@ -1058,7 +1058,6 @@
 </div><!-- /.modal -->
 
 <!-- HIRE ME  block-->
-
 <div class="modal" id="modal_hire_me">
     <div class="modal__dialog  modal__dialog--sm">
 
@@ -1086,19 +1085,22 @@
                     </li>
                 </ul>
 
-                <form class="form" action="/" method="post">
+                <form class="form" action="#" method="post" id="form">
                     <div class="form__group">
-                        <label class="form__label" for="input-email">Adress e-mail</label>
-                        <input class="form__input" name="input-email" type="text" id="input-email" placeholder="Adress e-mail">
+                        <label class="form__label" for="formName">Your name</label>
+                        <input class="form__input" name="name" type="text" id="formName" placeholder="Your name ...">
                     </div>
-
                     <div class="form__group">
-                        <label class="form__label" for="input-text">Request</label>
-                        <textarea class="form__textarea" name="input-text" id="input-text" placeholder="Type your request..."></textarea>
+                        <label class="form__label" for="formEmail">Adress e-mail</label>
+                        <input class="form__input" name="input-email" type="text" id="formEmail" placeholder="Adress e-mail">
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label" for="formRequest">Request</label>
+                        <textarea class="form__textarea" name="input-text" id="formText" placeholder="Type your request..."></textarea>
                     </div>
 
                     <div class="text-center">
-                        <button class="btn" type="submit">SEND</button>
+                        <button class="btn" type="submit" >SEND</button>
                     </div>
                 </form>
             </div><!-- /.contact__left -->
@@ -1112,6 +1114,7 @@
 <!-- JS -->
 <script src="js/slick.min.js"></script>
 <script src="js/app.js"></script>
+<!-- <script src="js/formValidation.js"></script> -->
 
 </body>
 </html>
