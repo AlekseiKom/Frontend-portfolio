@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link class="favicon" rel="shortcut icon" href="./images/Foto37.jpg" type="image/x-icon">
     <title>Aleksei Komarov Portfolio </title>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <!-- <script src="https://kit.fontawesome.com/c880edc0dd.js" crossorigin="anonymous"></script> -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c880edc0dd.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -1088,7 +1091,15 @@
 
 
 
-                <form class="form" action="MailForm/mail.php" method="post" id="form">
+                <form class="form" action="mail.php" method="POST" id="form">
+
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="ПОртфолио Frontend">
+                    <input type="hidden" name="admin_email" value="Lep4ik83@gmail.com">
+                    <input type="hidden" name="form_subject" value="Form Hire me!">
+                    <!-- END Hidden Required Fields -->
+
+
                     <div class="form__group">
                         <label class="form__label" for="formName">Your name</label>
                         <input class="form__input" name="name" type="text" id="formName" placeholder="Your name ...">
