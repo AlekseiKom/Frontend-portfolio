@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap" rel="stylesheet">
@@ -7,274 +8,311 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link class="favicon" rel="shortcut icon" href="./images/Foto37.jpg" type="image/x-icon">
     <title>Aleksei Komarov Portfolio </title>
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.js"
-    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/c880edc0dd.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
 
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
 
-<!-- Header -->
-<header class="header">
-    <div class="container">
-        <div class="header__inner">
-
-            <div class="user">
-                <div class="user__avatar">
-                    <img src="./images/Foto37.jpg" alt="">
-                </div>
-                <div class="user__content">
-                    <div class="user__name">
-                        Aleksei<br>Komarov
+                <div class="user">
+                    <div class="user__avatar">
+                        <img src="./images/Foto37.jpg" alt="">
                     </div>
-                    <div class="user__prof">Frontend Developer</div>
+                    <div class="user__content">
+                        <div class="user__name">
+                            Aleksei<br>Komarov
+                        </div>
+                        <div class="user__prof">Frontend Developer</div>
+                    </div>
                 </div>
+
+                <nav class="nav" id="nav">
+                    <!-- <a class="nav__link" href="#">work</a> -->
+                    <a class="nav__link" href="#about">about me</a>
+                    <!-- <a class="nav__link" href="#">blog</a> -->
+                    <a class="nav__link" href="https://forms.gle/eZzNUKLoWQGXguHy7" target="_blank">Feedback form</a>
+                    <!-- <a class="nav__link  nav__link--btn" href="#" data-modal="#modal_hire_me">hire me</a> -->
+                </nav>
+
+                <button class="burger" type="button" id="navToggle">
+                    <img class="burger__icon" src="images/burger.svg" alt="">
+                </button>
             </div>
-
-            <nav class="nav" id="nav">
-                <!-- <a class="nav__link" href="#">work</a> -->
-                <a class="nav__link" href="#about">about me</a>
-                <!-- <a class="nav__link" href="#">blog</a> -->
-                <a class="nav__link" href="https://forms.gle/eZzNUKLoWQGXguHy7"  target="_blank">Feedback form</a>
-                <!-- <a class="nav__link  nav__link--btn" href="#" data-modal="#modal_hire_me">hire me</a> -->
-            </nav>
-
-            <button class="burger" type="button" id="navToggle">
-                <img class="burger__icon" src="images/burger.svg" alt="">
-            </button>
         </div>
-    </div>
-</header>
+    </header>
 
+    <!-- Intro -->
+    <section class="intro">
+        <div class="container">
 
+            <div class="intro__inner">
+                <div class="intro__content">
+                    <h2 class="intro__subtitle">Hello i'm</h2>
+                    <h1 class="intro__title">Aleksei Komarov</h1>
+                    <div class="intro__text">Frontend developer</div>
 
-<!-- Intro -->
-<section class="intro">
-    <div class="container">
+                    <div class="social">
 
-        <div class="intro__inner">
-            <div class="intro__content">
-                <h2 class="intro__subtitle">Hello i'm</h2>
-                <h1 class="intro__title">Aleksei Komarov</h1>
-                <div class="intro__text">Frontend developer</div>
-
-                <div class="social">
-                   
-                    <a class="social__link" href="skype:alex.void1?chat">
-                        <img src="images/Social/Skype-dfs.png" alt="">
-                    </a>
-                    <a class="social__link" href="https://t.me/AlekseiKom">
-                        <img src="images/Social/Telega.png" alt="">
-                    </a>
-                    <a class="social__link" href="viber://chat?number=%2B380639435500">
-                        <img src="images/Social/Viber.png" alt="">
-                    </a>
-                    <!-- <a class="social__link" href="#">
+                        <a class="social__link" href="skype:alex.void1?chat">
+                            <img src="images/Social/Skype-dfs.png" alt="">
+                        </a>
+                        <a class="social__link" href="https://t.me/AlekseiKom">
+                            <img src="images/Social/Telega.png" alt="">
+                        </a>
+                        <a class="social__link" href="viber://chat?number=%2B380639435500">
+                            <img src="images/Social/Viber.png" alt="">
+                        </a>
+                        <!-- <a class="social__link" href="#">
                         <img src="images/Social/LI.png" alt="">
                     </a> -->
-                    <!-- <a class="social__link" href="#">
+                        <!-- <a class="social__link" href="#">
                         <img src="images/Social/Mass.png" alt="">
                     </a> -->
-                    <!-- <a class="social__link" href="#">
+                        <!-- <a class="social__link" href="#">
                         <img src="images/twitter.svg" alt="">
                     </a> -->
+                    </div>
+
+                    <!-- <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a> -->
+                    <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
                 </div>
 
-                <!-- <a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a> -->
-                <button class="btn" type="button" data-modal="#modal_resume">SEE MY RESUME</button>
+                <img class="intro__photo" src="images/Ava2.png" alt="">
+            </div><!-- /.intro__inner -->
+
+        </div><!-- /.container -->
+    </section>
+
+    <!-- Works -->
+    <div class="works">
+        <div class="container">
+
+            <div class="works__nav">
+                <a class="works__nav-link" href="#" data-filter="all">All</a>
+                <a class="works__nav-link" href="#" data-filter="app">App</a>
+                <a class="works__nav-link" href="#" data-filter="website">Websites</a>
+                <a class="works__nav-link" href="#" data-filter="interaction">Interaction</a>
             </div>
 
-            <img class="intro__photo" src="images/Ava2.png" alt="">
-        </div><!-- /.intro__inner -->
 
-    </div><!-- /.container -->
-</section>
+            <div class="portfolio" id="portfolio">
+                <!-- vesselWeight -->
+                <div class="portfolio__col" data-cat="website">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work__image" src="./images/Projects/VesselWeight/weight.png" alt="img">
+                        <div class="work__content">
+                            <div class="work__cat">category: website</div>
+                            <div class="work__title">
+                                Vessel Weight website
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ElanKazak -->
+                <div class="portfolio__col" data-cat="website">
+                    <div class="work" data-modal="#modal_project_7">
+                        <img class="work__image" src="./images/Projects/Kazak/Kazak.png" alt="img">
+                        <div class="work__content">
+                            <div class="work__cat">category: website</div>
+                            <div class="work__title">
+                                WP museum website
+                                <time class="work__date" datetime="2019-11-22 19:00">2022</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- homeMusic -->
+                <div class="portfolio__col" data-cat="website">
+                    <div class="work" data-modal="#modal_project_8">
+                        <img class="work__image" src="./images/Projects/Music/music.png" alt="img">
+                        <div class="work__content">
+                            <div class="work__cat">category: website</div>
+                            <div class="work__title">
+                                WP music website
+                                <time class="work__date" datetime="2019-11-22 19:00">2022</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- newLanding -->
+                <div class="portfolio__col" data-cat="website">
+                    <div class="work" data-modal="#modal_project_9">
+                        <img class="work__image" src="./images/Projects/NewLanding/landingPage.png" alt="img">
+                        <div class="work__content">
+                            <div class="work__cat">category: website</div>
+                            <div class="work__title">
+                                BEM Landing webpage
+                                <time class="work__date" datetime="2019-11-22 19:00">2022</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- squares -->
+                <div class="portfolio__col" data-cat="app">
+                    <div class="work" data-modal="#modal_project_2">
+                        <img class="work__image" src="./images/Projects/Squares/JsSquares1.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">category: JS simple game</div>
+                            <div class="work__title">
+                                JS Game of Squares
+                                <time class="work__date" datetime="2019-11-22 19:00">2020</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- newsBlog -->
+                <div class="portfolio__col" data-cat="app">
+                    <div class="work" data-modal="#modal_project_3">
+                        <img class="work__image" src="./images/Projects/News/NewsBlogTitle.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">News & Note blog (firebase)</div>
+                            <div class="work__title">
+                                News & Note blog
+                                <time class="work__date" datetime="2019-11-22 19:00">2021</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- wirelessSimSimpleLayout -->
+                <div class="portfolio__col" data-cat="app">
+                    <div class="work" data-modal="#modal_project_4">
+                        <img class="work__image" src="./images/Projects/WirelessSim/WirelessSimL.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">WireLess Simcard Website</div>
+                            <div class="work__title">
+                                Wireless Sim
+                                <time class="work__date" datetime="2019-11-22 19:00">2020</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Separator -->
+                <div class="portfolio__col" data-cat="app">
+                    <div class="work" data-modal="#modal_project_5">
+                        <img class="work__image" src="./images/Projects/Separator/Separator.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">Water Separator JS Game</div>
+                            <div class="work__title">
+                                Water Separator JS Game
+                                <time class="work__date" datetime="2019-11-22 19:00">2021</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Todo Javascript -->
+                <div class="portfolio__col" data-cat="app">
+                    <div class="work" data-modal="#modal_project_6">
+                        <img class="work__image" src="./images/Projects/JsTodo/TodoJSmain.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">Javascript todo list</div>
+                            <div class="work__title">
+                                Todo list Javascript native
+                                <time class="work__date" datetime="2019-11-22 19:00">2021</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
+                <!-- <div class="portfolio__col" data-cat="website">
+                    <div class="work">
+                        <img class="work__image" src="https://placehold.it/370x300" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">category: website</div>
+                            <div class="work__title">
+                                Project title
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<!-- Works -->
-<div class="works">
-    <div class="container">
+                <div class="portfolio__col" data-cat="interaction">
+                    <div class="work">
+                        <img class="work__image" src="https://placehold.it/370x300" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">category: interaction</div>
+                            <div class="work__title">
+                                Project title
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="works__nav">
-            <a class="works__nav-link" href="#" data-filter="all">All</a>
-            <a class="works__nav-link" href="#" data-filter="app">App</a>
-            <a class="works__nav-link" href="#" data-filter="website">Websites</a>
-            <a class="works__nav-link" href="#" data-filter="interaction">Interaction</a>
-        </div>
-
-
-        <div class="portfolio" id="portfolio">
-            <!-- vesselWeight -->
-            <div class="portfolio__col" data-cat="website">
-                <div class="work" data-modal="#modal_project_1">
-                    <img class="work__image" src="./images/Projects/VesselWeight/veswei1.jpg" alt="img">
-                    <div class="work__content">
-                        <div class="work__cat">category: website</div>
-                        <div class="work__title">
-                            Vessel Weight website
-                            <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                <div class="portfolio__col" data-cat="app">
+                    <div class="work">
+                        <img class="work__image" src="https://placehold.it/370x300" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">category: app</div>
+                            <div class="work__title">
+                                Project title
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- squares -->
-            <div class="portfolio__col" data-cat="app">
-                <div class="work" data-modal="#modal_project_2">
-                    <img class="work__image" src="./images/Projects/Squares/JsSquares1.jpg" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">category: JS simple game</div>
-                        <div class="work__title">
-                             JS Game of Squares
-                            <time class="work__date" datetime="2019-11-22 19:00">2020</time>
-                        </div>
+            <div class="text-center">
+                <a class="btn  btn--sm" href="#">LOAD MORE WORK</a>
+            </div> -->
+
+            </div><!-- /.works -->
+        </div><!-- /.container -->
+
+
+        <!-- About -->
+        <section class="about">
+            <a name="about"></a>
+            <div class="container">
+
+                <div class="about__inner">
+                    <div class="about__photo">
+                        <img class="img" src="images/veryfrontend.png" alt="">
                     </div>
-                </div>
-            </div>
 
-            <!-- newsBlog -->
-            <div class="portfolio__col" data-cat="app">
-                <div class="work" data-modal="#modal_project_3">
-                    <img class="work__image" src="./images/Projects/News/NewsBlogTitle.jpg" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">News & Note blog (firebase)</div>
-                        <div class="work__title">
-                            News & Note blog 
-                            <time class="work__date" datetime="2019-11-22 19:00">2021</time>
+                    <div class="about__content">
+                        <h3 class="about__title">about me</h3>
+                        <h2 class="about__bigtitle">WHO AM I</h2>
+                        <div class="about__text">
+                            <p>I live and work in Odessa, Ukraine.
+                                I have serious passion for new technologies, creating intuitive, dynamic user
+                                experiences.
+                            </p>
+                            <p>Now my focus is responsive websites with HTML, JavaScript, SASS, e.t.c <br>
+                                My goal is to freely express my thoughts and bring ideas to life in JavaScript and close
+                                to
+                                it technologies and frameworks. </p>
+                            <p>I am always experimenting, always learning, and never bored.</p>
+                            <hr>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- wirelessSimSimpleLayout -->
-            <div class="portfolio__col" data-cat="app">
-                <div class="work" data-modal="#modal_project_4">
-                    <img class="work__image" src="./images/Projects/WirelessSim/WirelessSimL.jpg" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">WireLess Simcard Website</div>
-                        <div class="work__title">
-                           Wireless Sim
-                            <time class="work__date" datetime="2019-11-22 19:00">2020</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-             
-            <!-- Separator -->
-            <div class="portfolio__col" data-cat="app">
-                <div class="work" data-modal="#modal_project_5">
-                    <img class="work__image" src="./images/Projects/Separator/Separator.jpg" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">Water Separator JS Game</div>
-                        <div class="work__title">
-                           Water Separator JS Game
-                            <time class="work__date" datetime="2019-11-22 19:00">2021</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Todo Javascript -->
-            <div class="portfolio__col" data-cat="app">
-                <div class="work" data-modal="#modal_project_6">
-                    <img class="work__image" src="./images/Projects/JsTodo/TodoJSmain.jpg" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">Javascript todo list</div>
-                        <div class="work__title">
-                        Todo list Javascript native
-                            <time class="work__date" datetime="2019-11-22 19:00">2021</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="portfolio__col" data-cat="website">
-                <div class="work">
-                    <img class="work__image" src="https://placehold.it/370x300" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">category: website</div>
-                        <div class="work__title">
-                            Project title
-                            <time class="work__date" datetime="2019-11-22 19:00">2019</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio__col" data-cat="interaction">
-                <div class="work">
-                    <img class="work__image" src="https://placehold.it/370x300" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">category: interaction</div>
-                        <div class="work__title">
-                            Project title
-                            <time class="work__date" datetime="2019-11-22 19:00">2019</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="portfolio__col" data-cat="app">
-                <div class="work">
-                    <img class="work__image" src="https://placehold.it/370x300" alt="">
-                    <div class="work__content">
-                        <div class="work__cat">category: app</div>
-                        <div class="work__title">
-                            Project title
-                            <time class="work__date" datetime="2019-11-22 19:00">2019</time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!-- /.portfolio -->
-
-        <div class="text-center">
-            <a class="btn  btn--sm" href="#">LOAD MORE WORK</a>
-        </div>
-
-    </div><!-- /.container -->
-</div><!-- /.works -->
-
-
-
-<!-- About -->
-<section class="about">
-    <a name="about"></a>
-    <div class="container">
-
-        <div class="about__inner">
-            <div class="about__photo">
-                <img class="img" src="images/veryfrontend.png" alt="">
-            </div>
-
-            <div class="about__content">
-                <h3 class="about__title">about me</h3>
-                <h2 class="about__bigtitle">WHO AM I</h2>
-                <div class="about__text">
-                    <p>I live and work in Odessa, Ukraine.
-                    I have serious passion for new technologies, creating intuitive, dynamic user experiences.</p>
-                    <p>Now my focus is responsive websites with HTML, JavaScript,  SASS, e.t.c <br>
-                    My goal is to freely express my thoughts and bring ideas to life in JavaScript and close to it technologies and frameworks.  </p>
-                    <p>I am always experimenting, always learning, and never bored.</p>
-                    <hr>
-                </div>
-                <!-- <a class="btn" href="#">HIRE ME</a>
+                        <!-- <a class="btn" href="#">HIRE ME</a>
                 <button class="btn" type="button">SEE MY RESUME</button> -->
-            </div><!-- /.about__content -->
-        </div><!-- /.about__inner -->
+                    </div><!-- /.about__content -->
+                </div><!-- /.about__inner -->
 
-    </div><!-- /.container -->
-</section>
+            </div><!-- /.container -->
+        </section>
 
-
-
-<!-- Reviews -->
-<!-- <div class="reviews">
+        <!-- Reviews -->
+        <!-- <div class="reviews">
     <div class="container">
 
         <div class="reviews__item">
@@ -301,8 +339,8 @@
 </div> -->
 
 
-<!-- News -->
-<!-- <section class="news">
+        <!-- News -->
+        <!-- <section class="news">
     <div class="container">
 
         <div class="news__header">
@@ -388,70 +426,67 @@
         </div>
 
     </div><!-- /.container -->
-</section> 
+    </section>
 
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
 
-        <div class="footer__inner">
-            <div class="footer__credits">
-                <div class="footer__copyright">
-                </div>
+            <div class="footer__inner">
+                <div class="footer__credits">
+                    <div class="footer__copyright">
+                    </div>
 
-                <div class="footer__social">
-                    <!-- <a href="#" target="_blank">
+                    <div class="footer__social">
+                        <!-- <a href="#" target="_blank">
                         <img src="images/behance-gray.svg" width="24" alt="">
                     </a>
                     <a href="#" target="_blank">
                         <img src="images/dribbble-gray.svg" width="18" alt="">
                     </a> -->
-                    <a href="#" target="_blank">
-                        <img src="images/linkedin-gray.svg" width="18" alt="">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="images/fb-gray.svg" height="18" alt="">
-                    </a>
-                    <!-- <a href="#" target="_blank">
+                        <a href="#" target="_blank">
+                            <img src="images/linkedin-gray.svg" width="18" alt="">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="images/fb-gray.svg" height="18" alt="">
+                        </a>
+                        <!-- <a href="#" target="_blank">
                         <img src="images/instagram-gray.svg" width="18" alt="">
                     </a> -->
-                    <!-- <a href="#" target="_blank">
+                        <!-- <a href="#" target="_blank">
                         <img src="images/twitter-gray.svg" width="20" alt="">
                     </a> -->
-                </div>
-            </div><!-- /.footer__credits -->
+                    </div>
+                </div><!-- /.footer__credits -->
 
-            <nav class="footer__nav">
-                <a class="footer__nav-link" href="#">My Works</a>
-                <!-- <a class="footer__nav-link" href="#">About me</a> -->
-                <!-- <a class="footer__nav-link" href="#">Blog</a> -->
-                <a class="footer__nav-link" href="#">Contact</a>
-                <!-- <a class="footer__nav-link  footer__nav-link--btn" href="#"  data-modal="#modal_hire_me">Hire me</a> -->
-                <a class="footer__nav-link  footer__nav-link--btn" href="https://forms.gle/eZzNUKLoWQGXguHy7"  target="_blank">Feedback form</a>
+                <nav class="footer__nav">
+                    <a class="footer__nav-link" href="#">My Works</a>
+                    <!-- <a class="footer__nav-link" href="#">About me</a> -->
+                    <!-- <a class="footer__nav-link" href="#">Blog</a> -->
+                    <a class="footer__nav-link" href="#">Contact</a>
+                    <!-- <a class="footer__nav-link  footer__nav-link--btn" href="#"  data-modal="#modal_hire_me">Hire me</a> -->
+                    <a class="footer__nav-link  footer__nav-link--btn" href="https://forms.gle/eZzNUKLoWQGXguHy7"
+                        target="_blank">Feedback form</a>
 
-            </nav>
-        </div><!-- /.footer__inner -->
+                </nav>
+            </div><!-- /.footer__inner -->
 
-    </div><!-- /.container -->
-</footer>
+        </div><!-- /.container -->
+    </footer>
 
+    <!--MY WORKS Modals -->
 
+    <!-- Vessel-Weight -->
+    <div class="modal" id="modal_project_1">
+        <div class="modal__dialog">
 
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
 
-
-<!--MY WORKS Modals -->
-
-<!-- Vessel-Weight -->
-<div class="modal" id="modal_project_1">     
-    <div class="modal__dialog">
-
-        <button class="modal__close" type="button" data-close>
-            <img src="images/modal-close.svg" alt="Close">
-        </button>
-
-        <div class="modal-work">
-            <!-- <div class="modal-work__preview">
+            <div class="modal-work">
+                <!-- <div class="modal-work__preview">
                 <div data-slider="slick">
                     <div>
                         <img class="modal-work__photo" src="./images/Projects/VesselWeight/veswei.jpg" alt="">
@@ -461,30 +496,32 @@
                     </div>
                 </div>
             </div> -->
-            <div class="modal-work__content">
+                <div class="modal-work__content">
 
-                <div class="modal-work__header">
-                    <h3 class="modal-work__title">Vessel weight control (calc) </h3>
-                    <div class="modal-work__info">
-                        Websites <span class="modal-work__info-divider">|</span> 2019
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Vessel weight control (calc) </h3>
+                        <div class="modal-work__info">
+                            Websites <span class="modal-work__info-divider">|</span> 2019
+                        </div>
                     </div>
-                </div>
 
 
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title">Client: </div>
-                    <div class="modal-work__client-company">Own Project</div>
-                </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client: </div>
+                        <div class="modal-work__client-company">Own Project</div>
+                    </div>
 
-                <div class="modal-work__text">
-                    <p>This website (calculator) can be used during loading or discharging vessels or railway carriages in seaport or other cargo terminal. </p>
-                    <p>This website-calculator helps to save time in calculating, as well as when filling out special forms and documents.</p>
-                    <p>I've developed this site mostly for mobile phones on javascript native and pure css.</p>
+                    <div class="modal-work__text">
+                        <p>This website (calculator) can be used during loading or discharging vessels or railway
+                            carriages in seaport or other cargo terminal. </p>
+                        <p>This website-calculator helps to save time in calculating, as well as when filling out
+                            special forms and documents.</p>
+                        <p>I've developed this site mostly for mobile phones on javascript native and pure css.</p>
 
-                    <a href="https://alekseikom.github.io/Vessel-Weight/" target="_blank">Vessel-Weight-Website</a>
-                </div>
+                        <a href="https://alekseikom.github.io/Vessel-Weight/" target="_blank">Vessel-Weight-Website</a>
+                    </div>
 
-                <!-- <div class="modal-work__footer">
+                    <!-- <div class="modal-work__footer">
                     <button class="modal-work__btn slickPrev" type="button">
                         <img src="images/back.svg" height="11" alt="">
                         Previous
@@ -495,22 +532,23 @@
                     </button>
                 </div> -->
 
-            </div><!-- /.modal-work__content -->
-        </div><!--/.modal-work -->
+                </div><!-- /.modal-work__content -->
+            </div>
+            <!--/.modal-work -->
 
-    </div><!-- /.modal__dialog -->
-</div><!-- /.modal -->
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
 
-<!-- Squares -->
-<div class="modal" id="modal_project_2">
-    <div class="modal__dialog">
+    <!-- Squares -->
+    <div class="modal" id="modal_project_2">
+        <div class="modal__dialog">
 
-        <button class="modal__close" type="button" data-close>
-            <img src="images/modal-close.svg" alt="Close">
-        </button>
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
 
-        <div class="modal-work">
-            <!-- <div class="modal-work__preview">
+            <div class="modal-work">
+                <!-- <div class="modal-work__preview">
                 <div data-slider="slick">
                     <div>
                         <img class="modal-work__photo" src="./images/Projects/Squares/square.jpg" alt="">
@@ -520,28 +558,28 @@
                     </div>
                 </div>
             </div> -->
-            <div class="modal-work__content">
+                <div class="modal-work__content">
 
-                <div class="modal-work__header">
-                    <h3 class="modal-work__title">JS game of squares</h3>
-                    <div class="modal-work__info">
-                        Small App <span class="modal-work__info-divider">|</span> 2020
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">JS game of squares</h3>
+                        <div class="modal-work__info">
+                            Small App <span class="modal-work__info-divider">|</span> 2020
+                        </div>
                     </div>
-                </div>
 
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title">Client:</div>
-                    <div class="modal-work__client-company">My own project</div>
-                </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">My own project</div>
+                    </div>
 
-                <div class="modal-work__text">
-                    <p>I wrote this game while taking my frontend courses on pure javascript.</p>
-                    <p>All you need is to set time of a game and go ahead!</p>
+                    <div class="modal-work__text">
+                        <p>I wrote this game while taking my frontend courses on pure javascript.</p>
+                        <p>All you need is to set time of a game and go ahead!</p>
 
-                    <a href="https://alekseikom.github.io/Squares/" target="_blank">JS square game</a>
-                </div>
+                        <a href="https://alekseikom.github.io/Squares/" target="_blank">JS square game</a>
+                    </div>
 
-                <!-- <div class="modal-work__footer">
+                    <!-- <div class="modal-work__footer">
                     <button class="modal-work__btn slickPrev" type="button">
                         <img src="images/back.svg" height="11" alt="">
                         Previous
@@ -552,22 +590,23 @@
                     </button>
                 </div> -->
 
-            </div><!-- /.modal-work__content -->
-        </div><!--/.modal-work -->
+                </div><!-- /.modal-work__content -->
+            </div>
+            <!--/.modal-work -->
 
-    </div><!-- /.modal__dialog -->
-</div><!-- /.modal -->
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
 
-<!-- NewsBlog -->
-<div class="modal" id="modal_project_3">
-    <div class="modal__dialog">
+    <!-- NewsBlog -->
+    <div class="modal" id="modal_project_3">
+        <div class="modal__dialog">
 
-        <button class="modal__close" type="button" data-close>
-            <img src="images/modal-close.svg" alt="Close">
-        </button>
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
 
-        <div class="modal-work">
-            <!-- <div class="modal-work__preview">
+            <div class="modal-work">
+                <!-- <div class="modal-work__preview">
                 <div data-slider="slick">
                     <div>
                         <img class="modal-work__photo" src="./images/Projects/News/NewsBlog.jpg" alt="">
@@ -577,27 +616,28 @@
                     </div>
                 </div>
             </div> -->
-            <div class="modal-work__content">
+                <div class="modal-work__content">
 
-                <div class="modal-work__header">
-                    <h3 class="modal-work__title">News & Notes blog with Google Firebase </h3>
-                    <div class="modal-work__info">
-                        website <span class="modal-work__info-divider">|</span> 2020
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">News & Notes blog with Google Firebase </h3>
+                        <div class="modal-work__info">
+                            website <span class="modal-work__info-divider">|</span> 2020
+                        </div>
                     </div>
-                </div>
 
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title">Client:</div>
-                    <div class="modal-work__client-company">Own Project</div>
-                </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">Own Project</div>
+                    </div>
 
-                <div class="modal-work__text">
-                    <p>This is one of my web-sites created with the help of webpack on pure javascript.</p>
-                    <p>This app works with a database created on Google firebase and everyone, even unauthorized users, can share their notes and news. </p>
-                    <a href="https://news-and-notes-blog-ak.firebaseapp.com" target="_blank">NEWS & BLOG</a>
-                </div>
+                    <div class="modal-work__text">
+                        <p>This is one of my web-sites created with the help of webpack on pure javascript.</p>
+                        <p>This app works with a database created on Google firebase and everyone, even unauthorized
+                            users, can share their notes and news. </p>
+                        <a href="https://news-and-notes-blog-ak.firebaseapp.com" target="_blank">NEWS & BLOG</a>
+                    </div>
 
-                <!-- <div class="modal-work__footer">
+                    <!-- <div class="modal-work__footer">
                     <button class="modal-work__btn slickPrev" type="button">
                         <img src="images/back.svg" height="11" alt="">
                         Previous
@@ -608,22 +648,23 @@
                     </button>
                 </div> -->
 
-            </div><!-- /.modal-work__content -->
-        </div><!--/.modal-work -->
+                </div><!-- /.modal-work__content -->
+            </div>
+            <!--/.modal-work -->
 
-    </div><!-- /.modal__dialog -->
-</div><!-- /.modal -->
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
 
-<!-- WireLess Sim Website (fixed layout) -->
-<div class="modal" id="modal_project_4">
-    <div class="modal__dialog">
+    <!-- WireLess Sim Website (fixed layout) -->
+    <div class="modal" id="modal_project_4">
+        <div class="modal__dialog">
 
-        <button class="modal__close" type="button" data-close>
-            <img src="images/modal-close.svg" alt="Close">
-        </button>
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
 
-        <div class="modal-work">
-            <!-- <div class="modal-work__preview">
+            <div class="modal-work">
+                <!-- <div class="modal-work__preview">
                 <div data-slider="slick">
                     <div>
                         <img class="modal-work__photo" src="./images/Projects/WirelessSim/WirelessSimM.jpg" alt="">
@@ -633,27 +674,28 @@
                     </div>
                 </div>
             </div> -->
-            <div class="modal-work__content">
+                <div class="modal-work__content">
 
-                <div class="modal-work__header">
-                    <h3 class="modal-work__title">Wireless Sim Website (fixed)</h3>
-                    <div class="modal-work__info">
-                        category <span class="modal-work__info-divider">|</span> 2018
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Wireless Sim Website (fixed)</h3>
+                        <div class="modal-work__info">
+                            category <span class="modal-work__info-divider">|</span> 2018
+                        </div>
                     </div>
-                </div>
 
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title">Client:</div>
-                    <div class="modal-work__client-company">Own pet-project</div>
-                </div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">Own pet-project</div>
+                    </div>
 
-                <div class="modal-work__text">
-                    <p>This website has been created on scss, gulp.</p>
-                    <p>Link below</p>
-                    <a href="https://alekseikom.github.io/WIRELESS-SIM-WEB-GULP-starter/" target="_blank">Wireless Sim Card Web</a>
-                </div>
+                    <div class="modal-work__text">
+                        <p>This website has been created on scss, gulp.</p>
+                        <p>Link below</p>
+                        <a href="https://alekseikom.github.io/WIRELESS-SIM-WEB-GULP-starter/" target="_blank">Wireless
+                            Sim Card Web</a>
+                    </div>
 
-                <!-- <div class="modal-work__footer">
+                    <!-- <div class="modal-work__footer">
                     <button class="modal-work__btn slickPrev" type="button">
                         <img src="images/back.svg" height="11" alt="">
                         Previous
@@ -664,362 +706,507 @@
                     </button>
                 </div> -->
 
-            </div><!-- /.modal-work__content -->
-        </div><!--/.modal-work -->
-
-    </div><!-- /.modal__dialog -->
-</div><!-- /.modal -->
-
-<!-- Water Separator JS GAME -->
-<div class="modal" id="modal_project_5">
-    <div class="modal__dialog">
-
-        <button class="modal__close" type="button" data-close>
-            <img src="images/modal-close.svg" alt="Close">
-        </button>
-
-        <div class="modal-work">
-           
-            <div class="modal-work__content">
-
-                <div class="modal-work__header">
-                    <h3 class="modal-work__title">Water Separation JS Game </h3>
-                    <div class="modal-work__info">
-                        category <span class="modal-work__info-divider">|</span> 2021
-                    </div>
-                </div>
-
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title">Client:</div>
-                    <div class="modal-work__client-company">Own pet-project</div>
-                </div>
-
-                <div class="modal-work__text">
-                    <p>This game has been created on pure javascript,<br>
-                        rules and description you may find at the link below.
-                    </p>
-                    <a href="https://alekseikom.github.io/Water-Separator/" target="_blank">Water-Separator</a>
-                </div>
-
-             
-
-            </div><!-- /.modal-work__content -->
-        </div><!--/.modal-work -->
-
-    </div><!-- /.modal__dialog -->
-</div><!-- /.modal -->
-
-<!-- ToDo Javascript -->
-<div class="modal" id="modal_project_6">
-    <div class="modal__dialog">
-
-        <button class="modal__close" type="button" data-close>
-            <img src="images/modal-close.svg" alt="Close">
-        </button>
-
-        <div class="modal-work">
-           
-            <div class="modal-work__content">
-
-                <div class="modal-work__header">
-                    <h3 class="modal-work__title">Javascript todo list </h3>
-                    <div class="modal-work__info">
-                        category <span class="modal-work__info-divider">|</span> 2020
-                    </div>
-                </div>
-
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title">Client:</div>
-                    <div class="modal-work__client-company">Own pet-project</div>
-                </div>
-
-                <div class="modal-work__text">
-                    <p>This app has been written on pure javascript,<br>
-                     just add a new task, press + and thats it!)
-                    </p>
-                    <a href="https://alekseikom.github.io/TodoList-JavaScript/" target="_blank">Java Script todo List</a>
-                </div>
-
-            </div><!-- /.modal-work__content -->
-        </div><!--/.modal-work -->
-
-    </div><!-- /.modal__dialog -->
-</div><!-- /.modal -->
-
-<div class="modal" id="modal_project_7">
-    <div class="modal__dialog">
-
-        <button class="modal__close" type="button" data-close>
-            <img src="images/modal-close.svg" alt="Close">
-        </button>
-
-        <div class="modal-work">
-            <div class="modal-work__preview">
-                <div data-slider="slick">
-                    <div>
-                        <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
-                    </div>
-                    <div>
-                        <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
-                    </div>
-                </div>
+                </div><!-- /.modal-work__content -->
             </div>
-            <div class="modal-work__content">
+            <!--/.modal-work -->
 
-                <div class="modal-work__header">
-                    <h3 class="modal-work__title">Project title 2</h3>
-                    <div class="modal-work__info">
-                        category <span class="modal-work__info-divider">|</span> 2018
-                    </div>
-                </div>
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
 
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title">Client:</div>
-                    <div class="modal-work__client-company">Creative Agency</div>
-                </div>
+    <!-- Water Separator JS GAME -->
+    <div class="modal" id="modal_project_5">
+        <div class="modal__dialog">
 
-                <div class="modal-work__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio accusantium? Sunt sed praesentium est minima.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio accusantium? Sunt sed praesentium est minima.</p>
-                </div>
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
 
-                <div class="modal-work__footer">
-                    <button class="modal-work__btn slickPrev" type="button">
-                        <img src="images/back.svg" height="11" alt="">
-                        Previous
-                    </button>
-                    <button class="modal-work__btn slickNext" type="button">
-                        Next
-                        <img src="images/next.svg" height="11" alt="">
-                    </button>
-                </div>
+            <div class="modal-work">
 
-            </div><!-- /.modal-work__content -->
-        </div><!--/.modal-work -->
+                <div class="modal-work__content">
 
-    </div><!-- /.modal__dialog -->
-</div><!-- /.modal -->
-
-<div class="modal" id="modal_project_8">
-    <div class="modal__dialog">
-
-        <button class="modal__close" type="button" data-close>
-            <img src="images/modal-close.svg" alt="Close">
-        </button>
-
-        <div class="modal-work">
-            <div class="modal-work__preview">
-                <div data-slider="slick">
-                    <div>
-                        <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
-                    </div>
-                    <div>
-                        <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-work__content">
-
-                <div class="modal-work__header">
-                    <h3 class="modal-work__title">Project title 2</h3>
-                    <div class="modal-work__info">
-                        category <span class="modal-work__info-divider">|</span> 2018
-                    </div>
-                </div>
-
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title">Client:</div>
-                    <div class="modal-work__client-company">Creative Agency</div>
-                </div>
-
-                <div class="modal-work__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio accusantium? Sunt sed praesentium est minima.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio accusantium? Sunt sed praesentium est minima.</p>
-                </div>
-
-                <div class="modal-work__footer">
-                    <button class="modal-work__btn slickPrev" type="button">
-                        <img src="images/back.svg" height="11" alt="">
-                        Previous
-                    </button>
-                    <button class="modal-work__btn slickNext" type="button">
-                        Next
-                        <img src="images/next.svg" height="11" alt="">
-                    </button>
-                </div>
-
-            </div><!-- /.modal-work__content -->
-        </div><!--/.modal-work -->
-
-    </div><!-- /.modal__dialog -->
-</div><!-- /.modal -->
-
-<div class="modal" id="modal_project_9">
-    <div class="modal__dialog">
-
-        <button class="modal__close" type="button" data-close>
-            <img src="images/modal-close.svg" alt="Close">
-        </button>
-
-        <div class="modal-work">
-            <div class="modal-work__preview">
-                <div data-slider="slick">
-                    <div>
-                        <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
-                    </div>
-                    <div>
-                        <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-work__content">
-
-                <div class="modal-work__header">
-                    <h3 class="modal-work__title">Project title 2</h3>
-                    <div class="modal-work__info">
-                        category <span class="modal-work__info-divider">|</span> 2018
-                    </div>
-                </div>
-
-                <div class="modal-work__client">
-                    <div class="modal-work__client-title">Client:</div>
-                    <div class="modal-work__client-company">Creative Agency</div>
-                </div>
-
-                <div class="modal-work__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio accusantium? Sunt sed praesentium est minima.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio accusantium? Sunt sed praesentium est minima.</p>
-                </div>
-
-                <div class="modal-work__footer">
-                    <button class="modal-work__btn slickPrev" type="button">
-                        <img src="images/back.svg" height="11" alt="">
-                        Previous
-                    </button>
-                    <button class="modal-work__btn slickNext" type="button">
-                        Next
-                        <img src="images/next.svg" height="11" alt="">
-                    </button>
-                </div>
-
-            </div><!-- /.modal-work__content -->
-        </div><!--/.modal-work -->
-
-    </div><!-- /.modal__dialog -->
-</div><!-- /.modal -->
-
-<!-- MY RESUME BLOCK -->
-<div class="modal" id="modal_resume">
-    <div class="modal__dialog">
-
-        <button class="modal__close" type="button" data-close>
-            <img src="images/modal-close.svg" alt="Close">
-        </button>
-
-        <div class="modal__content">
-            <h3 class="modal__title  text-center">RESUME</h3>
-
-            <div class="text-center">
-                <a class="btn btn--thin" href="./images/Resume/Aleksei Komarov Front-end.pdf" download rel="nooper">DOWNLOAD PDF</a>
-                <!-- <a class="btn btn--thin" href="#">PRINT</a> -->
-            </div>
-
-            <div class="timeline">
-                <div class="timeline__col  timeline__col--left">
-                    <h4 class="timeline__title">EXPERIENCE</h4>
-
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2018 - <b>Present</b></time>
-                        <h5 class="timeline__subtitle">Novotech seaport terminal </h5>
-                        <div class="timeline__position">Cargo surveyor</div>
-                        <div class="timeline__text">
-                            <p>
-                                -Cargo survey <br>
-                                -Quality and quantity inspection and control over the cargo arriving at the terminal.<br>
-                                -Control of quantity, quality when delivering cargo from a warehouse to a ship.<br>
-                                -Reception and delivery of grain from the warehouse (rolling-stock, silo).<br>
-                                -Creation of photo reports and special documentation.<br>
-                            </p>
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Water Separation JS Game </h3>
+                        <div class="modal-work__info">
+                            category <span class="modal-work__info-divider">|</span> 2021
                         </div>
                     </div>
 
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2015 - <b>2017</b></time>
-                        <h5 class="timeline__subtitle">Ukrferry (maritime operation management) </h5>
-                        <div class="timeline__position">Dispatcher</div>
-                        <div class="timeline__text">
-                            <p>
-                                -Communication with customers by telephone, fax, telex. ( including foreign customers ).<br>
-                                -Control over the receipt and timely updating of information on the company website.<br>
-                                -Control over the receipt of operational information to all interested parties (port controllers, agents, etc.).<br>
-                                -Monitoring  the schedule of vessel traffic. Filling out and sending out operational reports.<br>
-                                -Compilation and submission of operational reports.<br>
-                                -Work with electronic customer requests. <br>
-                                -Communication with agents, vessel captains on operational issues (E-mail, telephone, telex, reception / transmission of telephone messages to dispatchers of ports, AMPU, etc.).<br>
-                                -Chronology of vessel handling in sea ports.<br>
-                                -Calculation of voyage incomes at current fares.<br> 
-                            </p>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">Own pet-project</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>This game has been created on pure javascript,<br>
+                            rules and description you may find at the link below.
+                        </p>
+                        <a href="https://alekseikom.github.io/Water-Separator/" target="_blank">Water-Separator</a>
+                    </div>
+
+
+
+                </div><!-- /.modal-work__content -->
+            </div>
+            <!--/.modal-work -->
+
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+
+    <!-- ToDo Javascript -->
+    <div class="modal" id="modal_project_6">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
+
+            <div class="modal-work">
+
+                <div class="modal-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Javascript todo list </h3>
+                        <div class="modal-work__info">
+                            category <span class="modal-work__info-divider">|</span> 2020
                         </div>
                     </div>
 
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2010 - <b>2015</b></time>
-                        <h5 class="timeline__subtitle">Engineering networks and communications</h5>
-                        <div class="timeline__position">Instalator, adjustor</div>
-                        <div class="timeline__text">
-                            <p>Installation, adjustment and support of alarm, security, alerts, access, internet, fire extinguishing systems </p>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">Own pet-project</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>This app has been written on pure javascript,<br>
+                            just add a new task, press + and thats it!)
+                        </p>
+                        <a href="https://alekseikom.github.io/TodoList-JavaScript/" target="_blank">Java Script todo
+                            List</a>
+                    </div>
+
+                </div><!-- /.modal-work__content -->
+            </div>
+            <!--/.modal-work -->
+
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+
+    <!-- elanKazak wordpress -->
+    <div class="modal" id="modal_project_7">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
+
+            <div class="modal-work">
+
+                <div class="modal-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Website for Museum on CMS Wordpress </h3>
+                        <div class="modal-work__info">
+                            Website <span class="modal-work__info-divider">|</span> 2022
+                        </div>
+                    </div>
+
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">Elan Kazak museum</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>This website has been created on CMS Wordpress,<br>
+                            with elementor plugin and many other useful thems and plugins.
+                        </p>
+                        <a href="http://elan-kazak.alekseikom.com.ua" target="_blank">MUSEUM WEBSITE</a>
+                    </div>
+
+                </div><!-- /.modal-work__content -->
+            </div>
+            <!--/.modal-work -->
+
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+
+    <!-- musicWebsite wordpress -->
+    <div class="modal" id="modal_project_8">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
+
+            <div class="modal-work">
+
+                <div class="modal-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Music lessons website on CMS Wordpress </h3>
+                        <div class="modal-work__info">
+                            Website <span class="modal-work__info-divider">|</span> 2022
+                        </div>
+                    </div>
+
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">Music teacher)</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>This website has been created on CMS Wordpress,<br>
+                            with elementor plugin and many other useful thems and plugins.
+                        </p>
+                        <a href="https://alekseikom.com.ua" target="_blank">MUSIC LESSONS WEBSITE</a>
+                    </div>
+
+                </div><!-- /.modal-work__content -->
+            </div>
+            <!--/.modal-work -->
+
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+
+    <!-- newLanding plains AA -->
+    <div class="modal" id="modal_project_9">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
+
+            <div class="modal-work">
+
+                <div class="modal-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Adaptive BEM webpage</h3>
+                        <div class="modal-work__info">
+                            Website (landing) <span class="modal-work__info-divider">|</span> 2022
+                        </div>
+                    </div>
+
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">Oun pet project</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>This BEM methodology website has been created on pure css, HTML5.<br>
+                            BEM is a front-end naming method for organizing and naming CSS classes. The Block, Element,
+                            Modifier methodology is a popular naming convention for class names in HTML and CSS. It
+                            helps to write clean CSS by following some simple rules
+                        </p>
+                        <a href="https://alekseikom.github.io/NewLandingPage/" target="_blank"> landing page</a>
+                    </div>
+
+                </div><!-- /.modal-work__content -->
+            </div>
+            <!--/.modal-work -->
+
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal" id="modal_project_10">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
                         </div>
                     </div>
                 </div>
+                <div class="modal-work__content">
 
-                <div class="timeline__col  timeline__col--right">
-                    <h4 class="timeline__title">EDUCATION</h4>
-
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2019 - 2020</time>
-                        <h5 class="timeline__subtitle">Front-end development courses</h5>
-                        <div class="timeline__position">It-academy</div>
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Project title 2</h3>
+                        <div class="modal-work__info">
+                            category <span class="modal-work__info-divider">|</span> 2018
+                        </div>
                     </div>
 
-                    
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2013 - 2015</time>
-                        <h5 class="timeline__subtitle">English cources</h5>
-                        <div class="timeline__position">American English Center</div>
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">Creative Agency</div>
                     </div>
 
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2012 - 2015</time>
-                        <h5 class="timeline__subtitle">Maritime transport and logistics management </h5>
-                        <div class="timeline__position">Odessa National Maritime University</div>
+                    <div class="modal-work__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae
+                            debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio
+                            accusantium? Sunt sed praesentium est minima.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae
+                            debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio
+                            accusantium? Sunt sed praesentium est minima.</p>
                     </div>
 
-                    <div class="timeline__item">
-                        <time class="timeline__date" datetime="11-21-2019">2001 - 2007</time>
-                        <h5 class="timeline__subtitle">Hydro technical Engineering  </h5>
-                        <div class="timeline__position">Odessa National Maritime University</div>
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button">
+                            <img src="images/back.svg" height="11" alt="">
+                            Previous
+                        </button>
+                        <button class="modal-work__btn slickNext" type="button">
+                            Next
+                            <img src="images/next.svg" height="11" alt="">
+                        </button>
                     </div>
 
-                    <h4 class="timeline__title">Skills</h4>
-                    <div class="progress-bar">
-                        <div class="progress-bar__item">
-                            <div class="progress-bar__left">
-                                <div class="progress-bar__title"></div>
-                            </div>
+                </div><!-- /.modal-work__content -->
+            </div>
+            <!--/.modal-work -->
+
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal" id="modal_project_11">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Project title 2</h3>
+                        <div class="modal-work__info">
+                            category <span class="modal-work__info-divider">|</span> 2018
+                        </div>
+                    </div>
+
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">Creative Agency</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae
+                            debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio
+                            accusantium? Sunt sed praesentium est minima.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae
+                            debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio
+                            accusantium? Sunt sed praesentium est minima.</p>
+                    </div>
+
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button">
+                            <img src="images/back.svg" height="11" alt="">
+                            Previous
+                        </button>
+                        <button class="modal-work__btn slickNext" type="button">
+                            Next
+                            <img src="images/next.svg" height="11" alt="">
+                        </button>
+                    </div>
+
+                </div><!-- /.modal-work__content -->
+            </div>
+            <!--/.modal-work -->
+
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal" id="modal_project_12">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+                        <div>
+                            <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Project title 2</h3>
+                        <div class="modal-work__info">
+                            category <span class="modal-work__info-divider">|</span> 2018
+                        </div>
+                    </div>
+
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">Client:</div>
+                        <div class="modal-work__client-company">Creative Agency</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae
+                            debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio
+                            accusantium? Sunt sed praesentium est minima.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dicta, recusandae
+                            debitis iusto quos voluptatum at. Dolorum a, velit rerum dicta aut sapiente, optio
+                            accusantium? Sunt sed praesentium est minima.</p>
+                    </div>
+
+                    <div class="modal-work__footer">
+                        <button class="modal-work__btn slickPrev" type="button">
+                            <img src="images/back.svg" height="11" alt="">
+                            Previous
+                        </button>
+                        <button class="modal-work__btn slickNext" type="button">
+                            Next
+                            <img src="images/next.svg" height="11" alt="">
+                        </button>
+                    </div>
+
+                </div><!-- /.modal-work__content -->
+            </div>
+            <!--/.modal-work -->
+
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+
+    <!-- MY RESUME BLOCK -->
+    <div class="modal" id="modal_resume">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
+
+            <div class="modal__content">
+                <h3 class="modal__title  text-center">RESUME</h3>
+
+                <div class="text-center">
+                    <a class="btn btn--thin" href="./images/Resume/Aleksei Komarov Front-end.pdf" download
+                        rel="nooper">DOWNLOAD PDF</a>
+                    <!-- <a class="btn btn--thin" href="#">PRINT</a> -->
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline__col  timeline__col--left">
+                        <h4 class="timeline__title">EXPERIENCE</h4>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2018 - <b>Present</b></time>
+                            <h5 class="timeline__subtitle">Novotech seaport terminal </h5>
+                            <div class="timeline__position">Cargo surveyor</div>
                             <div class="timeline__text">
-                                   <p>  
-                                    Main tech skills: Javascript, Vue-js(basic), HTML5, CSS5, Scss, Git, Gulp, Node etc. <br>
-                                    Desire to learn, personal and professional development
-                                    </p>
+                                <p>
+                                    -Cargo survey <br>
+                                    -Quality and quantity inspection and control over the cargo arriving at the
+                                    terminal.<br>
+                                    -Control of quantity, quality when delivering cargo from a warehouse to a ship.<br>
+                                    -Reception and delivery of grain from the warehouse (rolling-stock, silo).<br>
+                                    -Creation of photo reports and special documentation.<br>
+                                </p>
                             </div>
-                            <!-- <div class="progress-bar__right">
+                        </div>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2015 - <b>2017</b></time>
+                            <h5 class="timeline__subtitle">Ukrferry (maritime operation management) </h5>
+                            <div class="timeline__position">Dispatcher</div>
+                            <div class="timeline__text">
+                                <p>
+                                    -Communication with customers by telephone, fax, telex. ( including foreign
+                                    customers ).<br>
+                                    -Control over the receipt and timely updating of information on the company
+                                    website.<br>
+                                    -Control over the receipt of operational information to all interested parties (port
+                                    controllers, agents, etc.).<br>
+                                    -Monitoring the schedule of vessel traffic. Filling out and sending out operational
+                                    reports.<br>
+                                    -Compilation and submission of operational reports.<br>
+                                    -Work with electronic customer requests. <br>
+                                    -Communication with agents, vessel captains on operational issues (E-mail,
+                                    telephone, telex, reception / transmission of telephone messages to dispatchers of
+                                    ports, AMPU, etc.).<br>
+                                    -Chronology of vessel handling in sea ports.<br>
+                                    -Calculation of voyage incomes at current fares.<br>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2010 - <b>2015</b></time>
+                            <h5 class="timeline__subtitle">Engineering networks and communications</h5>
+                            <div class="timeline__position">Instalator, adjustor</div>
+                            <div class="timeline__text">
+                                <p>Installation, adjustment and support of alarm, security, alerts, access, internet,
+                                    fire extinguishing systems </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline__col  timeline__col--right">
+                        <h4 class="timeline__title">EDUCATION</h4>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2019 - 2020</time>
+                            <h5 class="timeline__subtitle">Front-end development courses</h5>
+                            <div class="timeline__position">It-academy</div>
+                        </div>
+
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2013 - 2015</time>
+                            <h5 class="timeline__subtitle">English cources</h5>
+                            <div class="timeline__position">American English Center</div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2012 - 2015</time>
+                            <h5 class="timeline__subtitle">Maritime transport and logistics management </h5>
+                            <div class="timeline__position">Odessa National Maritime University</div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="11-21-2019">2001 - 2007</time>
+                            <h5 class="timeline__subtitle">Hydro technical Engineering </h5>
+                            <div class="timeline__position">Odessa National Maritime University</div>
+                        </div>
+
+                        <h4 class="timeline__title">Skills</h4>
+                        <div class="progress-bar">
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title"></div>
+                                </div>
+                                <div class="timeline__text">
+                                    <p>
+                                        Main tech skills: Javascript, Vue-js(basic), HTML5, CSS5, Scss, Git, Gulp, Node
+                                        etc. <br>
+                                        Desire to learn, personal and professional development
+                                    </p>
+                                </div>
+                                <!-- <div class="progress-bar__right">
                                 <div class="progress-bar__bar">
                                     <div class="progress-bar__progress" style="width: 50%;"></div>
                                 </div>
                             </div> -->
-                        </div>
+                            </div>
 
-                        <!-- <div class="progress-bar__item">
+                            <!-- <div class="progress-bar__item">
                             <div class="progress-bar__left">
                                 <div class="progress-bar__title">UI/UX Design</div>
                             </div>
@@ -1040,8 +1227,8 @@
                                 </div>
                             </div>
                         </div> -->
-                    </div><!-- /.progress-bar -->
-<!-- 
+                        </div><!-- /.progress-bar -->
+                        <!-- 
                     <h4 class="timeline__title">Awards</h4>
 
                     <div class="timeline__item">
@@ -1052,91 +1239,94 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis debitis autem aspernatur sed iusto maiores nihil magni provident dolore, animi nemo est corporis in facilis eum quae sint aliquam, ipsam?</p>
                         </div>
                     </div> -->
-                </div><!-- /.timeline__col -->
+                    </div><!-- /.timeline__col -->
 
-            </div><!-- /.timeline -->
+                </div><!-- /.timeline -->
 
-            <div class="text-center">
-                <!-- <a class="btn" href="#" data-modal="#modal_hire_me">Hire me</a> -->
-                <a class="btn" href="https://forms.gle/eZzNUKLoWQGXguHy7"  target="_blank">Feedback form</a>
-            </div>
+                <div class="text-center">
+                    <!-- <a class="btn" href="#" data-modal="#modal_hire_me">Hire me</a> -->
+                    <a class="btn" href="https://forms.gle/eZzNUKLoWQGXguHy7" target="_blank">Feedback form</a>
+                </div>
 
-        </div><!-- /.modal__content -->
+            </div><!-- /.modal__content -->
 
-    </div><!-- /.modal__dialog -->
-</div><!-- /.modal -->
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
 
-<!-- HIRE ME  block-->
-<div class="modal" id="modal_hire_me">
-    <div class="modal__dialog  modal__dialog--sm">
+    <!-- HIRE ME  block-->
+    <div class="modal" id="modal_hire_me">
+        <div class="modal__dialog  modal__dialog--sm">
 
-        <button class="modal__close" type="button" data-close>
-            <img src="images/modal-close.svg" alt="Close">
-        </button>
+            <button class="modal__close" type="button" data-close>
+                <img src="images/modal-close.svg" alt="Close">
+            </button>
 
-        <div class="contact">
-            <div class="contact__left">
-                <h3 class="modal__title mb-0">LET'S TALK!</h3>
-                <h4 class="modal__subtitle">CALL ME OR SEND ME A REQUEST</h4>
+            <div class="contact">
+                <div class="contact__left">
+                    <h3 class="modal__title mb-0">LET'S TALK!</h3>
+                    <h4 class="modal__subtitle">CALL ME OR SEND ME A REQUEST</h4>
 
-                <ul class="contact__info">
-                    <li class="contact__info-item">
-                        <img class="contact__info-icon" src="images/phone.svg" alt="">
-                        0965044695
-                    </li>
-                    <li class="contact__info-item">
-                        <img class="contact__info-icon" src="images/viber.svg" alt="">
-                        0639435500
-                    </li>
-                    <li class="contact__info-item">
-                        <img class="contact__info-icon" src="images/mail.svg" alt="">
-                        Lep4ik83@gmail.com
-                    </li>
-                </ul>
-
-
-
-
-                <form class="form" action="mail.php" method="POST" id="form">
-
-                    <!-- Hidden Required Fields -->
-                    <input type="hidden" name="project_name" value="ПОртфолио Frontend">
-                    <input type="hidden" name="admin_email" value="Lep4ik83@gmail.com">
-                    <input type="hidden" name="form_subject" value="Hire me! form">
-                    <!-- END Hidden Required Fields -->
-
-
-                    <div class="form__group">
-                        <label class="form__label" for="formName">Your name</label>
-                        <input class="form__input" name="name" type="text" id="formName" placeholder="Your name ...">
-                    </div>
-                    <div class="form__group">
-                        <label class="form__label" for="formEmail">Adress e-mail</label>
-                        <input class="form__input" name="input-email" type="text" id="formEmail" placeholder="Adress e-mail">
-                    </div>
-
-                    <div class="form__group">
-                        <label class="form__label" for="formRequest">Request</label>
-                        <textarea class="form__textarea" name="input-text" id="formText" placeholder="Type your request..."></textarea>
-                    </div>
-
-                    <div class="text-center">
-                        <button class="btn" type="submit" >SEND</button>
-                    </div>
-                </form>
-            </div><!-- /.contact__left -->
-        </div><!-- /.contact -->
-
-    </div><!-- /.modal__dialog -->
-</div><!-- /.modal -->
+                    <ul class="contact__info">
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="images/phone.svg" alt="">
+                            0965044695
+                        </li>
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="images/viber.svg" alt="">
+                            0639435500
+                        </li>
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="images/mail.svg" alt="">
+                            Lep4ik83@gmail.com
+                        </li>
+                    </ul>
 
 
 
-<!-- JS -->
-<script src="js/slick.min.js"></script>
-<script src="js/app.js"></script>
-<script src="js/form.js"></script>
-<!-- <script src="js/formValidation.js"></script> -->
+
+                    <form class="form" action="mail.php" method="POST" id="form">
+
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="ПОртфолио Frontend">
+                        <input type="hidden" name="admin_email" value="Lep4ik83@gmail.com">
+                        <input type="hidden" name="form_subject" value="Hire me! form">
+                        <!-- END Hidden Required Fields -->
+
+
+                        <div class="form__group">
+                            <label class="form__label" for="formName">Your name</label>
+                            <input class="form__input" name="name" type="text" id="formName"
+                                placeholder="Your name ...">
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="formEmail">Adress e-mail</label>
+                            <input class="form__input" name="input-email" type="text" id="formEmail"
+                                placeholder="Adress e-mail">
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="formRequest">Request</label>
+                            <textarea class="form__textarea" name="input-text" id="formText"
+                                placeholder="Type your request..."></textarea>
+                        </div>
+
+                        <div class="text-center">
+                            <button class="btn" type="submit">SEND</button>
+                        </div>
+                    </form>
+                </div><!-- /.contact__left -->
+            </div><!-- /.contact -->
+
+        </div><!-- /.modal__dialog -->
+    </div><!-- /.modal -->
+
+
+    <!-- JS -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/form.js"></script>
+    <!-- <script src="js/formValidation.js"></script> -->
 
 </body>
+
 </html>
