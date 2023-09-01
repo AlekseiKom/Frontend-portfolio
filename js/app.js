@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 
     const worksSlider = $('[data-slider="slick"]');
 
@@ -6,18 +6,18 @@ $(function() {
     =====================*/
     let filter = $("[data-filter]");
 
-    filter.on("click", function(event) {
+    filter.on("click", function (event) {
         event.preventDefault();
 
         let cat = $(this).data('filter');
 
-        if(cat == 'all') {
+        if (cat == 'all') {
             $("[data-cat]").removeClass("hide");
         } else {
-            $("[data-cat]").each(function() {
+            $("[data-cat]").each(function () {
                 let workCat = $(this).data('cat');
 
-                if(workCat != cat) {
+                if (workCat != cat) {
                     $(this).addClass('hide');
                 } else {
                     $(this).removeClass('hide');
@@ -33,7 +33,7 @@ $(function() {
     const modalCall = $("[data-modal]");
     const modalClose = $("[data-close]");
 
-    modalCall.on("click", function(event) {
+    modalCall.on("click", function (event) {
         event.preventDefault();
 
         let $this = $(this);
@@ -42,7 +42,7 @@ $(function() {
         $(modalId).addClass('show');
         $("body").addClass('no-scroll');
 
-        setTimeout(function() {
+        setTimeout(function () {
             $(modalId).find(".modal__dialog").css({
                 transform: "scale(1)"
             });
@@ -52,7 +52,7 @@ $(function() {
     });
 
 
-    modalClose.on("click", function(event) {
+    modalClose.on("click", function (event) {
         event.preventDefault();
 
         let $this = $(this);
@@ -62,27 +62,27 @@ $(function() {
             transform: "scale(0)"
         });
 
-        setTimeout(function() {
+        setTimeout(function () {
             modalParent.removeClass('show');
             $("body").removeClass('no-scroll');
         }, 200);
     });
 
 
-    $(".modal").on("click", function(event) {
+    $(".modal").on("click", function (event) {
         let $this = $(this);
 
         $this.find(".modal__dialog").css({
             transform: "scale(0)"
         });
 
-        setTimeout(function() {
+        setTimeout(function () {
             $this.removeClass('show');
             $("body").removeClass('no-scroll');
         }, 200);
     });
 
-    $(".modal__dialog").on("click", function(event) {
+    $(".modal__dialog").on("click", function (event) {
         event.stopPropagation();
     });
 
@@ -100,7 +100,7 @@ $(function() {
         dots: true
     });
 
-    $(".slickPrev").on("click", function(event) {
+    $(".slickPrev").on("click", function (event) {
         event.preventDefault();
 
         let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
@@ -108,7 +108,7 @@ $(function() {
         currentSlider.slick("slickPrev");
     });
 
-    $(".slickNext").on("click", function(event) {
+    $(".slickNext").on("click", function (event) {
         event.preventDefault();
 
         let currentSlider = $(this).parents('.modal').find('[data-slider="slick"]');
@@ -124,12 +124,20 @@ $(function() {
     const navToggle = $("#navToggle");
     const nav = $("#nav");
 
-    navToggle.on("click", function(event) {
+    navToggle.on("click", function (event) {
         event.preventDefault();
-
         nav.toggleClass("show");
+    })
+
+    $(document).on("click", function (event) {
+        if (!nav.is(event.target) && nav.has(event.target).length === 0 &&
+            !navToggle.is(event.target) && navToggle.has(event.target).length === 0) {
+            nav.removeClass('show');
+        }
     });
 
 });
+
+
 
 
